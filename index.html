@@ -13,7 +13,7 @@
             color: #333;
         }
         header {
-            background: #9b4d9e; /* Ungu */
+            background: #9b4d9e;
             color: white;
             text-align: center;
             padding: 40px 20px;
@@ -27,7 +27,7 @@
             font-size: 1.2rem;
         }
         main {
-            max-width: 900px;
+            max-width: 1000px;
             margin: 20px auto;
             padding: 0 15px;
         }
@@ -48,6 +48,18 @@
             border-radius: 10px;
             box-shadow: 0 2px 6px rgba(0,0,0,0.1);
             margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        .project-card img {
+            width: 120px;
+            height: auto;
+            border-radius: 8px;
+            object-fit: cover;
+        }
+        .project-card-content {
+            flex: 1;
         }
         .project-card h3 {
             margin-top: 0;
@@ -90,14 +102,20 @@
         <section class="projects">
             <h2>Projects</h2>
             <div class="project-card">
-                <h3>Project 1: Personal Blog</h3>
-                <p>A simple personal blog built with HTML, CSS, and JavaScript.</p>
-                <a href="#">View Project</a>
+                <img src=""C:\Users\Acer\Pictures\Screenshots\Elin Herlina_22110138_Tugas java.png"" alt="Personal Blog">
+                <div class="project-card-content">
+                    <h3>Project 1: Personal Blog</h3>
+                    <p>A simple personal blog built with HTML, CSS, and JavaScript.</p>
+                    <a href="#">View Project</a>
+                </div>
             </div>
             <div class="project-card">
-                <h3>Project 2: Portfolio Website</h3>
-                <p>A portfolio website showcasing my projects and skills.</p>
-                <a href="#">View Project</a>
+                <img src="images/portfolio.png" alt="Portfolio Website">
+                <div class="project-card-content">
+                    <h3>Project 2: Portfolio Website</h3>
+                    <p>A portfolio website showcasing my projects and skills.</p>
+                    <a href="#">View Project</a>
+                </div>
             </div>
         </section>
     </main>
